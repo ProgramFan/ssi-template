@@ -10,10 +10,12 @@
 
 \let\CCTCJKfonts=1
 \LoadClass[fontset=fandol]{ctexart}
+\csname ctex_at_end_package:nn\endcsname
+  {hyperref}{\let\C\undefined}
 %% math packages
 \RequirePackage{amsmath,amsthm,amsfonts,amssymb,bm,upgreek,multicol,mathrsfs,pifont,amscd,latexsym,geometry,color,fancyhdr}
 %% graphics packages
-\RequirePackage{graphicx}
+\RequirePackage{graphicx,subfig}
 %% other packages
 \RequirePackage{algorithm,algorithmic,multirow,tabularx,url,float,booktabs}
 %% check pdfTeX mode
@@ -529,8 +531,8 @@
 \setlength{\doublerulesep}{0.4pt}
 \newcommand\Times{\fontfamily{ptm}\selectfont}
 \newcommand{\picsize}{\fontsize{8pt}{0.4\baselineskip}\selectfont}
-\usepackage[bf,footnotesize,labelsep=quad]{caption}
-\captionsetup[subfloat]{labelformat=simple}
+\usepackage[font={bf,footnotesize},labelsep=quad]{caption}
+\captionsetup[subfloat]{labelformat=simple,captionskip=0pt}
 \captionsetup[table]{aboveskip=1mm}
 \captionsetup[figure]{aboveskip=3mm}
 \captionsetup[algorithm]{font=footnotesize}
@@ -570,6 +572,7 @@
 \newcommand{\Set}[2]{\ensuremath{\left\{ #1 \left| \right. #2 \right\}}}%
 \newcommand{\abs}[1]{\ensuremath{\left| #1 \right|}}%
 \newcommand{\map}[3]{\ensuremath{#1 : #2 \rightarrow #3}}%
+\newcommand{\C}[1]{\ensuremath{\mathcal{#1}}}%
 \newcommand{\restrict}[2]{\ensuremath{#1 \left|_{#2}\right.}}%
 \newcommand{\NN}{\mathbb{N}^0}
 \newcommand{\PN}{\mathbb{N}}
