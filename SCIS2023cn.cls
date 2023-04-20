@@ -6,9 +6,8 @@
 \def\@website{\url{www.scichina.com}~~~~\url{infocn.scichina.com}}
 
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{SCIS}[\sci@filedate, \sci@fileversion]
+\ProvidesClass{SCIS2023cn}[\sci@filedate, \sci@fileversion]
 
-\let\CCTCJKfonts=1
 \LoadClass[fontset=fandol]{ctexart}
 \csname ctex_at_end_package:nn\endcsname
   {hyperref}{\let\C\undefined}
