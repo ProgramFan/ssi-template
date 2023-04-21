@@ -5,7 +5,7 @@
 
 ## GBK 支持
 
-模板默认字体为 Fandol，是一套集成在 Texlive 中的免费的中文字体，但只支持 GB2312 字符集，导致一些 GBK 字符无法显示（主要是一些作者姓名，大家都懂的）。这种情况下，可以修改默认字体设置来实现，在 SCIR2023cn.cls中，修改 `LoadPackage[fontset=fandol]{ctexart}` 语句中的 fandol 为 `windowsnew` 或 `macnew` 即可。Linux 下建议安装合法 Windows 字体，然后选 `windowsnew` 即可。
+模板默认字体为 Fandol，是一套集成在 Texlive 中的免费的中文字体，但只支持 GB2312 字符集，导致一些 GBK 字符无法显示（主要是一些作者姓名，大家都懂的）。这种情况下，可以修改默认字体设置来实现，在 SCIS2023cn.cls中，修改 `LoadPackage[fontset=fandol]{ctexart}` 语句中的 fandol 为 `windowsnew` 或 `macnew` 即可。Linux 下建议安装合法 Windows 字体，然后选 `windowsnew` 即可。
 
 ## 参考资料
 
